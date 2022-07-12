@@ -5,11 +5,13 @@ namespace eTickets.Models
     public class Cinema
     {
         [Key]
-        public int Id { get; set; } 
+        public int Id { get; set; }
+
+        [Display(Name = "Logo")]
         public string Logo { get; set; }
 
         [Required]
-        [Display(Name = "Cinema Name")]
+        [Display(Name = "CinemaName")]
         public string Name { get; set; }
 
 
